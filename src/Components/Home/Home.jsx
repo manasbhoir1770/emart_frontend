@@ -13,7 +13,7 @@ function Home(){
           <SpecialDealsCarousel />
           <TrendingProducts />
           <DealOfTheDay />
-          <Footer />
+          <Footer />  
          
         </>
       )

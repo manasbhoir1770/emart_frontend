@@ -15,7 +15,7 @@ const CategoriesBar = () => {
           } 
           id="electronics-dropdown"
         >
-           <NavDropdown.Item as={Link} to="/electronics">Mobiles</NavDropdown.Item>
+           <NavDropdown.Item as={Link} to="/mobiles">Mobiles</NavDropdown.Item>
            <NavDropdown.Item as={Link} to="/electronics">Laptops</NavDropdown.Item>
         </NavDropdown>
 

@@ -2,6 +2,18 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ProductPage = () => {
+  // Function to generate price range options
+  const generatePriceRanges = () => {
+    const ranges = [
+      "₹100 - ₹1,000",
+      "₹1,000 - ₹10,000",
+      "₹10,000 - ₹50,000",
+      "₹50,000 - ₹1,00,000",
+      "₹1,00,000 - ₹5,00,000"
+    ];
+    return ranges;
+  };
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -19,7 +31,13 @@ const ProductPage = () => {
           </div>
           <div className="mb-3">
             <h6>Price Range</h6>
-            <input type="range" className="form-range" min="0" max="100000" />
+            <select className="form-select">
+              {generatePriceRanges().map((range, index) => (
+                <option key={index} value={range}>
+                  {range}
+                </option>
+              ))}
+            </select>
           </div>
           <div className="mb-3">
             <h6>Storage Specification</h6>
@@ -53,8 +71,8 @@ const ProductPage = () => {
                   <p>Price: ₹{item * 10000}</p>
                   <p className="text-danger">Discounted Price: ₹{item * 9000}</p>
                   <div className="d-flex justify-content-between">
-                    <button className="btn btn-success">Buy Now</button>
-                    <button className="btn btn-warning">Add to Cart</button>
+                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn btn-primary">Add to Cart</button>
                   </div>
                 </div>
               </div>
