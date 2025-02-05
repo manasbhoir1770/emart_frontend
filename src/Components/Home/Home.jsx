@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationBar from "./nav";
+
 import CategoriesBar from "./CategoriesBar";
 import SpecialDealsCarousel from "./Carousel";
 import TrendingProducts from "./TrendingProducts";
@@ -8,7 +8,7 @@ import Footer from "./Footer";
 function Home(){
     return (
         <>
-          <NavigationBar />
+          
           <CategoriesBar />
           <SpecialDealsCarousel />
           <TrendingProducts />
