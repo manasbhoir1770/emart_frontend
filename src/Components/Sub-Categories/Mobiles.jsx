@@ -44,7 +44,7 @@ export default function SubCategory() {
       <div className="row">
         {/* Sidebar Filters */}
         <div className="col-md-2 bg-light p-3 rounded">
-          <h4 className="mb-3">Filters</h4>
+          <h4 className="mb-3"></h4>
           <div>
             <h5>Price Range</h5>
             <select className="form-select" onChange={(e) => setSelectedPrice(priceRanges[e.target.value])}>
