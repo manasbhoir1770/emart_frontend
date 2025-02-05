@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -56,6 +56,9 @@ const Login = () => {
           <button type="submit" className="btn btn-primary w-100">
             Login
           </button>
+          <p className="mt-3 text-center">
+            New user? <Link to="/signup">Sign up</Link>
+          </p>
         </form>
       </div>
     </div>

@@ -7,17 +7,23 @@ import Home from './Components/Home/Home';
 import NavigationBar from './Components/Home/nav';
 import Login from './Components/Login/login';
 // import Cart from './Components/Cart/Cart'; // Import Cart component
-
+import ProductPage from './Components/Categories/Electronics';
+import Signup from './Components/Signup/Signup';
 function App() {
   return (
+    <>
     <Router>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/electronics" element={<ProductPage/>} />
+        <Route path="/signup" element={<Signup />} /> 
         {/* <Route path="/cart" element={<Cart />} /> */}
       </Routes>
     </Router>
+    
+    </>
   );
 }
 

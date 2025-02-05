@@ -17,7 +17,7 @@ const NavigationBar = () => {
             <i className="bi bi-person-circle"></i> User
           </Nav.Link>
           <Nav.Link as={Link} to="/cart">
-            Cart 🛒
+            🛒 Cart
           </Nav.Link>
         </Nav>
       </Container>

@@ -1,17 +1,22 @@
 import React from "react";
 import { NavDropdown, Nav, Container, Image } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 const CategoriesBar = () => {
   return (
     <Container fluid className="bg-light py-2">
       <Nav className="justify-content-center">
         {/* Electronics */}
         <NavDropdown 
-          title={<span><Image src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" width="30" height="30" className="me-2" /> Electronics</span>} 
+          title={
+            <Link to="/electronics" className="d-flex align-items-center">
+              <Image src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" width="30" height="30" className="me-2" />
+              Electronics
+            </Link>
+          } 
           id="electronics-dropdown"
         >
-          <NavDropdown.Item href="#">Mobiles</NavDropdown.Item>
-          <NavDropdown.Item href="#">Laptops</NavDropdown.Item>
+           <NavDropdown.Item as={Link} to="/electronics">Mobiles</NavDropdown.Item>
+           <NavDropdown.Item as={Link} to="/electronics">Laptops</NavDropdown.Item>
         </NavDropdown>
 
         {/* Fashion */}
